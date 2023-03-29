@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap");
+
+:root {
+  --hearding: "Open Sans", sans-serif;
+  --paragraphs: "Poppins", sans-serif;
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+header {
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: var(--Violet);
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    flex-direction: column;
+  }
+
+  main {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 150px;
+  }
+
+  .desktopSvg {
+    margin-bottom: -230px;
+  }
+}
+
+main {
+  margin-top: 232px;
+}
+
+.desktopSvg {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 99.2vh;
+  width: 850px;
+}
+
+.iamgeLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.illst-img {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  max-width: 750px;
+  height: 460px;
+  padding-left: 20px;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: var(--hearding);
+  font-size: 2.4rem;
+}
+
+.h1-1 {
+  top: 150px;
+  right: 161px;
+}
+
+.h1-2 {
+  top: 200px;
+  right: 500px;
+}
+
+p {
+  top: 300px;
+  right: 161px;
+  width: 380px;
+  color: darkgray;
+  font-family: var(--paragraphs);
+  font-size: 0.8rem;
+}
+
+button {
+  top: 400px;
+  right: 390px;
+  background-color: aliceblue;
+  height: 50px;
+  width: 150px;
+  border: 1px solid hsl(257, 40%, 49%);
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: var(--paragraphs);
+  color: darkgray;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  background-color: var(--SoftMagenta);
+  color: white;
+  box-shadow: 1px 1px 10px white;
+}
+
+.icon-flex {
+  display: flex;
+  margin-top: 194px;
+  margin-left: 189px;
+}
+
+.fa {
+  cursor: pointer;
+  margin-left: -3px;
+  margin-top: -3px;
+}
+
+.fa:hover {
+}
+
+.icon {
+  margin-left: 16px;
+  row-gap: 5px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 2px solid black;
+  background: none;
+}
