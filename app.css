@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.div1 {
+  width: 400px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.div2 {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}
+
+.div3 {
+  width: 400px;
+  height: 200px;
+  background-color: red;
+}
